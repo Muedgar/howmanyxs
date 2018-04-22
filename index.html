@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <script type="text/javascript">
+ 	function howManyXs (X, L, U) {
+  var x = X;
+  var l = L + 1;
+  var u = U - 1;
+  var arrayTwoS = "";
+  var array = [];
+  var arrayTwo = [];
+  for (var a = l; a <= u; a++) {
+    array.push(a);
+  };
+  for (var b = 0; b < array.length; b++) {
+    arrayTwoS = toString(array[a]);
+    var len = arrayTwoS.length;
+    for (var c = 0; c < len ; c++) {
+      arrayTwo.push(+arrayTwoS.charAt(c));
+    };
+  };
+//   function returning() {
+//   	var count = 0;
+//   for (var i = 0; i < arrayTwo.length; i++) {
+//     if (arrayTwo[i] === x) {
+//          count = count + 1;
+//         };
+//   };
+//   return count;
+// };
+// var answer = returning();
+// return answer;
+  return arrayTwo;
+}
+
+
+
+ </script>
+</body>
+</html>
